@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import { Validation } from '../src';
 
 describe('Address Validation', () => {
-  // BTC
+  // WCN
   const btcAddress = '1NuKwkDtCymgA1FNLUBaUWLD8s4kdKWvgn';
   const btcTestAddress = 'mkUNMewkQsHKRcUvv5HLKbqmepCqNH8goc';
 
@@ -42,9 +42,9 @@ describe('Address Validation', () => {
   const invalidEthUriParams = 'ethereum:0x37d7B3bBD88EFdE6a93cF74D2F5b0385D3E3B08A?value=invalid&gasLimit=123&gas=123';
   const invalidXrpUriParams = 'ripple:rEqj9WKSH7wEkPvWf6b4gCi26Y3F7HbKUF?amount=invalid&dt=123';
 
-  it('should be able to validate an BTC address', async () => {
-    const isValidAddress = await Validation.validateAddress('BTC', 'mainnet', btcAddress);
-    const isValidTestAddress = await Validation.validateAddress('BTC', 'testnet', btcTestAddress);
+  it('should be able to validate an WCN address', async () => {
+    const isValidAddress = await Validation.validateAddress('WCN', 'mainnet', btcAddress);
+    const isValidTestAddress = await Validation.validateAddress('WCN', 'testnet', btcTestAddress);
     expect(isValidAddress).to.equal(true);
     expect(isValidTestAddress).to.equal(true);
   });
@@ -68,9 +68,9 @@ describe('Address Validation', () => {
     expect(isValidAddress).to.equal(true);
   });
 
-  it('should be able to validate an BTC Uri', async () => {
-    const isValidUri = await Validation.validateUri('BTC', btcUri);
-    const isValidTestUri = await Validation.validateUri('BTC', btcTestUri);
+  it('should be able to validate an WCN Uri', async () => {
+    const isValidUri = await Validation.validateUri('WCN', btcUri);
+    const isValidTestUri = await Validation.validateUri('WCN', btcTestUri);
     expect(isValidUri).to.equal(true);
     expect(isValidTestUri).to.equal(true);
   });
@@ -100,8 +100,8 @@ describe('Address Validation', () => {
     expect(isValidUriSingleParam).to.equal(true);
   });
 
-  it('should be able to invalidate an incorrect BTC address', async () => {
-    const inValidAddress = await Validation.validateAddress('BTC', 'mainnet', invalidBtcAddress);
+  it('should be able to invalidate an incorrect WCN address', async () => {
+    const inValidAddress = await Validation.validateAddress('WCN', 'mainnet', invalidBtcAddress);
     expect(inValidAddress).to.equal(false);
   });
 

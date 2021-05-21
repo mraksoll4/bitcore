@@ -16,7 +16,7 @@ const Constants = Common.Constants;
 const segWitToAddress = 'BC1QW508D6QEJXTDG4Y5R3ZARVARY0C5XW7KV8F3T4'; //'bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq';
 
 
-describe('Chain BTC', function() {
+describe('Chain WCN', function() {
  
   describe('#getBitcoreTx', function() {
     it('should create a valid bitcore TX', function() {

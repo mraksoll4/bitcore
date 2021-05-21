@@ -23,7 +23,7 @@ export class PriceProvider {
     if (currency === 'USD') {
       let ratesAPI;
       switch (this.api.getConfig().chain) {
-        case 'BTC':
+        case 'WCN':
           ratesAPI = this.api.ratesAPI.btc;
           break;
         case 'BCH':

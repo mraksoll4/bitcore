@@ -527,7 +527,7 @@ helpers.stubFeeLevels = function(levels, fill, coin) {
   coin = coin || 'btc';
   let div = 1;
   if (coin == 'btc' || coin == 'bch' || coin == 'doge') {
-    div = 1e8;  // bitcoind returns values in BTC amounts
+    div = 1e8;  // bitcoind returns values in WCN amounts
   }
 
   blockchainExplorer.estimateFee = function(nbBlocks, cb) {

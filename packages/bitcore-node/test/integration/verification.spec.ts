@@ -11,7 +11,7 @@ import { wait } from '../../src/utils/wait';
 import { resetDatabase } from '../helpers';
 import { intAfterHelper, intBeforeHelper } from '../helpers/integration';
 
-const chain = 'BTC';
+const chain = 'WCN';
 const network = 'regtest';
 const address = '2MuYKLUaKCenkEpwPkWUwYpBoDBNA2dgY3t';
 

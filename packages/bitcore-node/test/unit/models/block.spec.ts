@@ -18,7 +18,7 @@ describe('Block Model', function() {
   after(unitAfterHelper);
 
   let addBlockParams = {
-    chain: 'BTC',
+    chain: 'WCN',
     network: 'regtest',
     block: TEST_BLOCK,
     height: 1355,
@@ -97,7 +97,7 @@ describe('Block Model', function() {
     it('should return the new tip', async () => {
       let newBlock = Object.assign({ save: () => Promise.resolve() }, BitcoinBlockStorage, addBlockParams);
       mockStorage(newBlock);
-      const params = { chain: 'BTC', network: 'regtest' };
+      const params = { chain: 'WCN', network: 'regtest' };
       const result = await ChainStateProvider.getLocalTip(params);
       expect(result!.height).to.deep.equal(addBlockParams.height);
       expect(result!.chain).to.deep.equal(addBlockParams.chain);
@@ -118,7 +118,7 @@ describe('Block Model', function() {
       sandbox.restore();
     });
     it('should return 65 zeros if there are no processed blocks for the chain and network', async () => {
-      const params = { chain: 'BTC', network: 'regtest' };
+      const params = { chain: 'WCN', network: 'regtest' };
       const result = await ChainStateProvider.getLocatorHashes(params);
       expect(result).to.deep.equal([Array(65).join('0')]);
     });
@@ -152,7 +152,7 @@ describe('Block Model', function() {
           bits: parseInt('207fffff', 16),
           nonce: 2
         },
-        chain: 'BTC',
+        chain: 'WCN',
         network: 'regtest'
       };
 
@@ -170,7 +170,7 @@ describe('Block Model', function() {
       let coinModelUpdateSpy = CoinStorage.collection.updateMany as sinon.SinonSpy;
 
       let blockMethodParams = {
-        chain: 'BTC',
+        chain: 'WCN',
         network: 'regtest',
         block: TEST_BLOCK,
         height: 1355
@@ -190,7 +190,7 @@ describe('Block Model', function() {
         previousBlockHash: '3420349f63d96f257d56dd970f6b9079af9cf2784c267a13b1ac339d47031fe9'
       });
       let blockMethodParams = {
-        chain: 'BTC',
+        chain: 'WCN',
         network: 'regtest',
         block: TEST_BLOCK,
         height: 1355
@@ -209,7 +209,7 @@ describe('Block Model', function() {
       });
 
       let blockMethodParams = {
-        chain: 'BTC',
+        chain: 'WCN',
         network: 'regtest',
         block: TEST_BLOCK,
         height: 1355
@@ -228,7 +228,7 @@ describe('Block Model', function() {
       });
 
       let blockMethodParams = {
-        chain: 'BTC',
+        chain: 'WCN',
         network: 'regtest',
         block: TEST_BLOCK,
         height: 1355
@@ -249,7 +249,7 @@ describe('Block Model', function() {
       });
 
       let blockMethodParams = {
-        chain: 'BTC',
+        chain: 'WCN',
         network: 'regtest',
         block: TEST_BLOCK,
         height: 1355
@@ -267,7 +267,7 @@ describe('Block Model', function() {
   describe('_apiTransform', () => {
     it('should return the transform object with block values', () => {
       const block: IBtcBlock = {
-        chain: 'BTC',
+        chain: 'WCN',
         network: 'mainnet',
         height: 1,
         hash: 'abcd',

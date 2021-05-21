@@ -15,7 +15,7 @@ const aKey = new Key({
 
 describe('Verifier', function() {
   describe('checkAddress', function() {
-    it('should verify a BTC  address', () => {
+    it('should verify a WCN  address', () => {
       let cred = aKey.createCredentials(null, { coin: 'btc', network: 'livenet', account: 0, n: 1 });
       cred.addWalletInfo('id', 'name', 1, 1, 'copayer');
 

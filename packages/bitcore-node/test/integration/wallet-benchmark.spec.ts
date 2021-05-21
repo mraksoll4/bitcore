@@ -18,7 +18,7 @@ import { createWallet } from '../benchmark/wallet-benchmark';
 import { resetDatabase } from '../helpers';
 import { intAfterHelper, intBeforeHelper } from '../helpers/integration';
 
-const chain = 'BTC';
+const chain = 'WCN';
 const network = 'regtest';
 const chainConfig = config.chains[chain][network];
 const creds = chainConfig.rpc;

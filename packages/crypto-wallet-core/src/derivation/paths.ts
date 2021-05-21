@@ -1,5 +1,5 @@
 export const Paths = {
-  BTC: {
+  WCN: {
     mainnet: "m/44'/0'/",
     livenet: "m/44'/0'/"
   },

@@ -16,7 +16,7 @@
     <!--network selector -->
     <ion-buttons>
       <button ion-button (click)="changeCurrency($event)" class="cn-button hover-lite" type="button" tabindex="0">
-        <ion-icon class="currency-icon" name="logo-bitcoin" *ngIf="(chainNetwork.chain === 'BTC' || chainNetwork.chain === 'BCH') && currencyProvider?.currencySymbol !== 'USD'"></ion-icon>
+        <ion-icon class="currency-icon" name="logo-bitcoin" *ngIf="(chainNetwork.chain === 'WCN' || chainNetwork.chain === 'BCH') && currencyProvider?.currencySymbol !== 'USD'"></ion-icon>
         <ion-icon class="currency-icon" name="logo-usd" *ngIf="currencyProvider?.currencySymbol === 'USD'"></ion-icon>
         <span><img src="assets/img/doge-icon.svg" *ngIf="chainNetwork.chain === 'DOGE' && currencyProvider?.currencySymbol !== 'USD'" width="9" alt="DOGE"></span>
         <span><img src="assets/img/ethicon.svg" *ngIf="chainNetwork.chain === 'ETH' && currencyProvider?.currencySymbol !== 'USD'" width="11" alt="ETH"></span>

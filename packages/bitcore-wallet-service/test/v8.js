@@ -17,8 +17,8 @@ const V8UTXOS = [
 
 
 const V8UTXOS2 = [ 
-  { _id: '5cb4f9d612025b0a3931b13c', chain: 'BTC', network: 'mainnet', coinbase: false, mintIndex: 0, spentTxid: '', mintTxid: '623f72b089da60a179d7b85b50ed655e8580747ee06f2f77369cacfb99de11a0', mintHeight: 571792, spentHeight: -2, address: '38o49rd64PFDmvUV7928K1a5SRnoVgJSFW', script: 'a9144ded3cc47fcf6883a78c29134f90b0c1b0c368c887', value: 109810934, confirmations: 126 },
-  { _id: '5cb503e612025b0a393d2ea9', chain: 'BTC', network: 'mainnet', coinbase: false, mintIndex: 0, spentTxid: '', mintTxid: '06ab9db9100409132a4c1367b87f16983938007dbae7b96a0746a64a7755e3e6', mintHeight: 571797, spentHeight: -2, address: '36pUaXzGouNdCqUDRWRXX9NJYungJEWJC2', script: 'a9143841ca886a1c4276966a77a15d0d1c4fe1e841bd87', value: 350000000, confirmations: 121 }]; 
+  { _id: '5cb4f9d612025b0a3931b13c', chain: 'WCN', network: 'mainnet', coinbase: false, mintIndex: 0, spentTxid: '', mintTxid: '623f72b089da60a179d7b85b50ed655e8580747ee06f2f77369cacfb99de11a0', mintHeight: 571792, spentHeight: -2, address: '38o49rd64PFDmvUV7928K1a5SRnoVgJSFW', script: 'a9144ded3cc47fcf6883a78c29134f90b0c1b0c368c887', value: 109810934, confirmations: 126 },
+  { _id: '5cb503e612025b0a393d2ea9', chain: 'WCN', network: 'mainnet', coinbase: false, mintIndex: 0, spentTxid: '', mintTxid: '06ab9db9100409132a4c1367b87f16983938007dbae7b96a0746a64a7755e3e6', mintHeight: 571797, spentHeight: -2, address: '36pUaXzGouNdCqUDRWRXX9NJYungJEWJC2', script: 'a9143841ca886a1c4276966a77a15d0d1c4fe1e841bd87', value: 350000000, confirmations: 121 }]; 
 
 var t = (new Date).toISOString();
 var external = '11234';

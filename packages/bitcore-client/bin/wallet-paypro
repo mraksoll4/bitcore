@@ -6,7 +6,7 @@ const request = require('request-promise-native');
 const promptly = require('promptly');
 const cwc = require('crypto-wallet-core');
 const libs = {
-  BTC: cwc.BitcoreLib,
+  WCN: cwc.BitcoreLib,
   BCH: cwc.BitcoreLibCash,
   DOGE: cwc.BitcoreLibDoge
 }
@@ -62,7 +62,7 @@ const main = async () => {
   const from = inputFrom || await wallet.deriveAddress(0);
   let nonce;
   const { chain } = wallet;
-  if (!['BTC', 'BCH', 'DOGE'].includes(chain)) {
+  if (!['WCN', 'BCH', 'DOGE'].includes(chain)) {
     nonce = inputNonce || await wallet.getNonce();
   }
   const currency = token || chain;
@@ -115,7 +115,7 @@ const main = async () => {
     console.log(`txid: ${txid}`);
 
     let weightedSize;
-    if (['BTC', 'BCH', 'DOGE'].includes(chain)) {
+    if (['WCN', 'BCH', 'DOGE'].includes(chain)) {
       const transaction = new libs[chain].Transaction(signedTx);
       weightedSize = transaction._estimateSize();
     }

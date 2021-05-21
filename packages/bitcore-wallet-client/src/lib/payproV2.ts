@@ -125,11 +125,11 @@ export class PayProV2 {
         'The transaction you sent does not have any output to the bitcoin address on the invoice'
       ):
         return new Errors.WRONG_ADDRESS();
-      case errMsg.includes('The amount on the transaction (X BTC) does'):
+      case errMsg.includes('The amount on the transaction (X WCN) does'):
         return new Errors.WRONG_AMOUNT();
       case errMsg.includes('Transaction fee (X sat/kb) is below'):
         return new Errors.NOT_ENOUGH_FEE();
-      case errMsg.includes('This invoice is priced in BTC, not BCH.'):
+      case errMsg.includes('This invoice is priced in WCN, not BCH.'):
         return new Errors.BTC_NOT_BCH();
       case errMsg.includes(
         '	One or more input transactions for your transaction were not found on the blockchain.'
@@ -233,7 +233,7 @@ export class PayProV2 {
   /**
    * Sends an unsigned raw transaction to the server for verification of outputs and fee amount
    * @param {string} paymentUrl - the payment protocol specific url
-   * @param {string} chain - The cryptocurrency chain of the payment (BTC, BCH, ETH, etc)
+   * @param {string} chain - The cryptocurrency chain of the payment (WCN, BCH, ETH, etc)
    * @param {string} currency - When spending a token on top of a chain, such as GUSD on ETH this would be GUSD,
    * if no token is used this should be blank
    * @param [{tx: string, weightedSize: number}] unsignedTransactions - Hexadecimal format unsigned transactions

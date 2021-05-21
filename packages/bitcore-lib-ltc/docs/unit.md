@@ -13,10 +13,10 @@ To understand the need of using the `Unit` class when dealing with unit conversi
 ```
 
 ## Supported units
-The supported units are BTC, mBTC, bits (micro BTCs, uBTC) and satoshis. The codes for each unit can be found as members of the Unit class.
+The supported units are WCN, mBTC, bits (micro BTCs, uBTC) and satoshis. The codes for each unit can be found as members of the Unit class.
 
 ```javascript
-var btcCode = Unit.BTC;
+var btcCode = Unit.WCN;
 var mbtcCode = Unit.mBTC;
 var ubtcCode = Unit.uBTC;
 var bitsCode = Unit.bits;
@@ -31,7 +31,7 @@ var unit;
 var amount = 100;
 
 // using a unit code
-var unitPreference = Unit.BTC;
+var unitPreference = Unit.WCN;
 unit = new Unit(amount, unitPreference);
 
 // using a known unit
@@ -48,7 +48,7 @@ Once you have a unit instance, you can check its representation in all the avail
 var unit;
 
 // using a unit code
-var unitPreference = Unit.BTC;
+var unitPreference = Unit.WCN;
 value = Unit.fromSatoshis(amount).to(unitPreference);
 
 // using a known unit
@@ -58,14 +58,14 @@ value = Unit.fromBTC(amount).toBits();
 value = Unit.fromBTC(amount).toSatoshis();
 
 // using accessors
-value = Unit.fromBTC(amount).BTC;
+value = Unit.fromBTC(amount).WCN;
 value = Unit.fromBTC(amount).mBTC;
 value = Unit.fromBTC(amount).bits;
 value = Unit.fromBTC(amount).satoshis;
 ```
 
 ## Using a fiat currency
-The unit class also provides a convenient alternative to create an instance from a fiat amount and the corresponding BTC/fiat exchange rate. Any unit instance can be converted to a fiat amount by providing the current exchange rate. Check the example below:
+The unit class also provides a convenient alternative to create an instance from a fiat amount and the corresponding WCN/fiat exchange rate. Any unit instance can be converted to a fiat amount by providing the current exchange rate. Check the example below:
 
 ```javascript
 var unit, fiat;

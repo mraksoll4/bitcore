@@ -17,7 +17,7 @@ describe('Coin Model', function() {
       let coin = {
         _id: id,
         network: 'regtest',
-        chain: 'BTC',
+        chain: 'WCN',
         mintTxid: '81f24ac62a6ffb634b74e6278997f0788f3c64e844453f8831d2a526dc3ecb13',
         mintIndex: 0,
         mintHeight: 1,
@@ -40,7 +40,7 @@ describe('Coin Model', function() {
         network: 'regtest',
         confirmations: -1,
         mintIndex: 0,
-        chain: 'BTC',
+        chain: 'WCN',
         spentTxid: '',
         address: 'n1ojJtS98D2VRLcTkaHH4YXLG4ytCyS7AL',
         coinbase: true,
@@ -54,7 +54,7 @@ describe('Coin Model', function() {
       let coin = {
         _id: id,
         network: 'regtest',
-        chain: 'BTC',
+        chain: 'WCN',
         mintTxid: '81f24ac62a6ffb634b74e6278997f0788f3c64e844453f8831d2a526dc3ecb13',
         mintIndex: 0,
         mintHeight: 1,
@@ -73,7 +73,7 @@ describe('Coin Model', function() {
         _id: id.toHexString(),
         mintTxid: '81f24ac62a6ffb634b74e6278997f0788f3c64e844453f8831d2a526dc3ecb13',
         network: 'regtest',
-        chain: 'BTC',
+        chain: 'WCN',
         spentTxid: '',
         mintHeight: 1,
         mintIndex: 0,
@@ -99,7 +99,7 @@ describe('Coin Model', function() {
 
     it('should return an object with confirmed, unconfirmed, and balance when additional time parameter is passed in', async () => {
       let id = new ObjectId('5c364e342ab5602e97a56f0e');
-      let chain = 'BTC';
+      let chain = 'WCN';
       let network = 'regtest';
       let time = new Date().toISOString();
       let query = { wallets: id, 'wallets.0': { $exists: true } };

@@ -448,7 +448,7 @@ describe('Email notifications', function() {
               });
               spanish.from.should.equal('bws@dummy.net');
               spanish.subject.should.contain('Nuevo pago recibido');
-              spanish.text.should.contain('0.123 BTC');
+              spanish.text.should.contain('0.123 WCN');
               var english = _.find(emails, {
                 to: 'copayer2@domain.com'
               });

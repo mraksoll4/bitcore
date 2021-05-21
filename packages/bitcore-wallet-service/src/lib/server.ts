@@ -1774,7 +1774,7 @@ export class WalletService {
           const feePerKb = _.isObject(result) && result[p] && _.isNumber(result[p]) ? +result[p] : -1;
           if (feePerKb < 0) failed.push(p);
 
-          // NOTE: ONLY BTC/BCH/DOGE expect feePerKb to be Bitcoin amounts
+          // NOTE: ONLY WCN/BCH/DOGE expect feePerKb to be Bitcoin amounts
           // others... expect wei.
 
           return ChainService.convertFeePerKb(coin, p, feePerKb);

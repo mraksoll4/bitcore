@@ -16,7 +16,7 @@ describe('Utils', () => {
   });
 
   describe('#xPubToCopayerId', () => {
-    it('should generate copayerId BTC', () => {
+    it('should generate copayerId WCN', () => {
       var xpub = Bitcore.HDPublicKey.fromString('xpub6BosfCnifzxcFwrSzQiqu2DBVTshkCXacvNsWGYJVVhhawA7d4R5WSWGFNbi8Aw6ZRc1brxMyWMzG3DSSSSoekkudhUd9yLb6qx39T9nMdj');
       var res = Utils.xPubToCopayerId('btc', xpub);
       res.should.equal('8b5ae039f102653a49be29ab1625c2e77a987bcbad60715dea147976386e8fa7');

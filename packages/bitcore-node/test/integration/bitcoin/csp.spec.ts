@@ -9,7 +9,7 @@ describe('Bitcoin API', function() {
   after(async () => intAfterHelper(suite));
 
   it('should be able to get the fees', async () => {
-    const chain = 'BTC';
+    const chain = 'WCN';
     const network = 'regtest';
     const target = 1;
     const cacheKey = `getFee-${chain}-${network}-${target}`;

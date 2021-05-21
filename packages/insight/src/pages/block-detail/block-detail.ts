@@ -55,7 +55,7 @@ export class BlockDetailPage {
       response => {
         let block;
         if (
-          this.chainNetwork.chain === 'BTC' ||
+          this.chainNetwork.chain === 'WCN' ||
           this.chainNetwork.chain === 'BCH' ||
           this.chainNetwork.chain === 'DOGE'
         ) {

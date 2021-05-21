@@ -10,7 +10,7 @@ Let's say we have a node_module, named `bitcore-node-bch` with the following cod
 module.exports = class BitcoinCashModule {
   constructor(services) {
     services.Libs.register('BCH', 'bitcore-lib-cash', 'bitcore-p2p-cash');
-    services.P2P.register('BCH', services.P2P.get('BTC'));
+    services.P2P.register('BCH', services.P2P.get('WCN'));
   }
 }
 ```

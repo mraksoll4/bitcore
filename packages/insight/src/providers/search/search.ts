@@ -25,16 +25,16 @@ export class SearchProvider {
   // Some of these could be combined into more complex regexes, but have been intentionally kept relatively separate to
   // make it clear which address types are checked for so that we know in the future which address types are present/missing
   private inputTypes: InputType[] = [
-    // Standard BTC / Legacy BCH address
+    // Standard WCN / Legacy BCH address
     {
       regexes: [/^(bitcoin:)?([13][a-km-zA-HJ-NP-Z1-9]{25,34})/],
       dataIndex: 2,
       type: 'address',
       chainNetworks: [
-        { chain: 'BTC', network: 'mainnet' }
+        { chain: 'WCN', network: 'mainnet' }
       ],
     },
-    // Standard BTC / Legacy BCH address
+    // Standard WCN / Legacy BCH address
     {
       regexes: [/^(bitcoincash:)?([13][a-km-zA-HJ-NP-Z1-9]{25,34})/],
       dataIndex: 2,
@@ -43,13 +43,13 @@ export class SearchProvider {
         { chain: 'BCH', network: 'mainnet' }
       ],
     },
-    // bech32 BTC Address
+    // bech32 WCN Address
     {
       regexes: [/^(bitcoin:)?(bc1[ac-hj-np-zAC-HJ-NP-Z02-9]{11,71})/],
       dataIndex: 2,
       type: 'address',
       chainNetworks: [
-        { chain: 'BTC', network: 'mainnet' }
+        { chain: 'WCN', network: 'mainnet' }
       ],
     },
     // Standard BCH Address
@@ -61,13 +61,13 @@ export class SearchProvider {
         { chain: 'BCH', network: 'mainnet' }
       ],
     },
-    // Testnet BTC / BCH / Doge Address
+    // Testnet WCN / BCH / Doge Address
     {
       regexes: [/^(bitcoin:|bchtest:|dogecoin:)?([2mn][1-9A-HJ-NP-Za-km-z]{26,35})/],
       dataIndex: 2,
       type: 'address',
       chainNetworks: [
-        { chain: 'BTC', network: 'testnet' },
+        { chain: 'WCN', network: 'testnet' },
         { chain: 'BCH', network: 'testnet' },
         { chain: 'DOGE', network: 'testnet' }
       ],
@@ -99,15 +99,15 @@ export class SearchProvider {
         { chain: 'DOGE', network: 'mainnet' }
       ],
     },
-    // BTC / BCH / DOGE block or tx
+    // WCN / BCH / DOGE block or tx
     {
       regexes: [/^[A-Fa-f0-9]{64}$/],
       type: 'blockOrTx',
       chainNetworks: [
-        { chain: 'BTC', network: 'mainnet' },
+        { chain: 'WCN', network: 'mainnet' },
         { chain: 'BCH', network: 'mainnet' },
         { chain: 'DOGE', network: 'mainnet' },
-        { chain: 'BTC', network: 'testnet' },
+        { chain: 'WCN', network: 'testnet' },
         { chain: 'BCH', network: 'testnet' },
         { chain: 'DOGE', network: 'testnet' }
       ],
@@ -121,16 +121,16 @@ export class SearchProvider {
         { chain: 'ETH', network: 'testnet' }
       ],
     },
-    // BTC / BCH / DOGE / ETH block height
+    // WCN / BCH / DOGE / ETH block height
     {
       regexes: [/^[0-9]{1,9}$/],
       type: 'block',
       chainNetworks: [
-        { chain: 'BTC', network: 'mainnet' },
+        { chain: 'WCN', network: 'mainnet' },
         { chain: 'BCH', network: 'mainnet' },
         { chain: 'DOGE', network: 'mainnet' },
         { chain: 'ETH', network: 'mainnet' },
-        { chain: 'BTC', network: 'testnet' },
+        { chain: 'WCN', network: 'testnet' },
         { chain: 'BCH', network: 'testnet' },
         { chain: 'DOGE', network: 'testnet' },
         { chain: 'ETH', network: 'testnet' }

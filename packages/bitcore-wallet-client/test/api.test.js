@@ -2780,7 +2780,7 @@ describe('client API', function() {
   });
 
   describe('Network fees', () => {
-    it('should get current fee levels for BTC', done => {
+    it('should get current fee levels for WCN', done => {
       blockchainExplorerMock.setFeeLevels({
         1: 40000,
         3: 20000,
@@ -3881,7 +3881,7 @@ describe('client API', function() {
       );
     };
 
-    describe('BTC', done => {
+    describe('WCN', done => {
       beforeEach(done => {
         setup(2, 3, 'btc', 'testnet', done);
       });
@@ -4654,22 +4654,22 @@ describe('client API', function() {
 
     let tests = [
 /*      {
-        name: 'weightedSize: Legacy BTC',
+        name: 'weightedSize: Legacy WCN',
         opts: { network: 'livenet' },
         expectedSize: 220,
       },
       {
-        name: 'weightedSize: Segwit BTC',
+        name: 'weightedSize: Segwit WCN',
         opts: { network: 'livenet', useNativeSegwit: true },
         expectedSize: 140,
       }
  */   {
-        name: 'weightedSize: Legacy BTC',
+        name: 'weightedSize: Legacy WCN',
         opts: { network: 'livenet' },
         expectedSize: 335,
       },
       {
-        name: 'weightedSize: Segwit BTC',
+        name: 'weightedSize: Segwit WCN',
         opts: { network: 'livenet', useNativeSegwit: true },
         expectedSize: 187, // from decode-tx
       }
@@ -4752,7 +4752,7 @@ describe('client API', function() {
       });
     });
 
-    describe('Shared wallet BTC', () => {
+    describe('Shared wallet WCN', () => {
       // Tests will be considered slow after 1 second elapses
       beforeEach(async () => {
         await new Promise(resolve => {
@@ -4935,7 +4935,7 @@ describe('client API', function() {
       });
     });
 
-    describe('Shared wallet / requiredFeeRate BTC', () => {
+    describe('Shared wallet / requiredFeeRate WCN', () => {
       beforeEach(async () => {
         await new Promise(resolve => {
           DATA = JSON.parse(TestData.payProJsonV2Body.btc);
@@ -5003,7 +5003,7 @@ describe('client API', function() {
                 try {
                   should.not.exist(err);
                   spy.called.should.be.true;
-                  postArgs[1].currency.should.equal('BTC');
+                  postArgs[1].currency.should.equal('WCN');
                   postArgs[1].transactions.length.should.equal(1);
                   postArgs[1].transactions[0].tx.length.should.be.within(665, 680);
 
@@ -5041,7 +5041,7 @@ describe('client API', function() {
       });
     });
 
-    describe('1-of-1 wallet BTC', () => {
+    describe('1-of-1 wallet WCN', () => {
       beforeEach(async () => {
         await new Promise(resolve => {
           DATA = JSON.parse(TestData.payProJsonV2Body.btc);
@@ -5366,7 +5366,7 @@ describe('client API', function() {
 
   describe('Transactions Signatures and Rejection', function() {
     this.timeout(5000);
-    it('Send and broadcast in 1-1 wallet BTC', done => {
+    it('Send and broadcast in 1-1 wallet WCN', done => {
       helpers.createAndJoinWallet(clients, keys, 1, 1, {}, w => {
         clients[0].createAddress((err, x0) => {
           should.not.exist(err);

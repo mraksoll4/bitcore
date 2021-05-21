@@ -162,7 +162,7 @@ var errorSpec = [
   {
     name: 'BTC_NOT_BCH',
     message:
-      'This invoice is priced in BTC, not BCH. Please try with a BTC wallet instead.'
+      'This invoice is priced in WCN, not BCH. Please try with a WCN wallet instead.'
   },
   {
     name: 'REQUEST_TIMEOUT',

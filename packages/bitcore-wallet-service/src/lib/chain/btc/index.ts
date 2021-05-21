@@ -318,7 +318,7 @@ export class BtcChain implements IChain {
   getBitcoreTx(txp, opts = { signed: true }) {
     const t = new this.bitcoreLib.Transaction();
 
-    // BTC tx version
+    // WCN tx version
     if (txp.version <= 3) {
       t.setVersion(1);
     } else {

@@ -46,7 +46,7 @@ describe('TxProposal', function() {
 
 
 
-    it('should default to BTC coin', function() {
+    it('should default to WCN coin', function() {
       var txp = TxProposal.fromObj(aTXP());
       should.exist(txp);
       txp.coin.should.equal('btc');

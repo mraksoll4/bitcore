@@ -432,7 +432,7 @@ export class Key {
     ).privateKey.toString();
 
     if (opts.network == 'testnet') {
-      // Hacky: BTC/BCH xPriv depends on network: This code is to
+      // Hacky: WCN/BCH xPriv depends on network: This code is to
       // convert a livenet xPriv to a testnet xPriv
       let x = xPrivKey.toObject();
       x.network = 'testnet';

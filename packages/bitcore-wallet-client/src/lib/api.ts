@@ -2914,7 +2914,7 @@ export class API extends EventEmitter {
         });
         opts = opts.concat(testnet);
       } else {
-        //  leave only BTC, and no testnet
+        //  leave only WCN, and no testnet
         opts = opts.filter(x => {
           return x[0] == 'btc';
         });
@@ -2995,7 +2995,7 @@ export class API extends EventEmitter {
         useLegacyPurpose: false
       },
       {
-        // older BTC/BCH  multisig wallets: /[44]/[0,145]'/
+        // older WCN/BCH  multisig wallets: /[44]/[0,145]'/
         nonCompliantDerivation: false,
         useLegacyCoinType: false,
         useLegacyPurpose: true
@@ -3008,7 +3008,7 @@ export class API extends EventEmitter {
       },
 
       {
-        // old BTC no-comp wallets: /44'/[0]'/
+        // old WCN no-comp wallets: /44'/[0]'/
         nonCompliantDerivation: true,
         useLegacyPurpose: true
       }

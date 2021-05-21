@@ -371,7 +371,7 @@ export class PushNotificationsService {
 
   _getDataForTemplate(notification: INotification, recipient, cb) {
     const UNIT_LABELS = {
-      btc: 'BTC',
+      btc: 'WCN',
       bit: 'bits',
       bch: 'BCH',
       eth: 'ETH',

@@ -41,7 +41,7 @@ export class TransactionListComponent implements OnInit {
     if (this.transactions && this.transactions.length === 0) {
       if (this.queryType === 'blockHash') {
         if (
-          this.chainNetwork.chain === 'BTC' ||
+          this.chainNetwork.chain === 'WCN' ||
           this.chainNetwork.chain === 'BCH' ||
           this.chainNetwork.chain === 'DOGE'
         ) {
@@ -60,7 +60,7 @@ export class TransactionListComponent implements OnInit {
         const txs: any = [];
 
         if (
-          this.chainNetwork.chain === 'BTC' ||
+          this.chainNetwork.chain === 'WCN' ||
           this.chainNetwork.chain === 'BCH' ||
           this.chainNetwork.chain === 'DOGE'
         ) {
@@ -154,7 +154,7 @@ export class TransactionListComponent implements OnInit {
 
   public loadMore(infiniteScroll) {
     if (
-      (this.queryType === 'blockHash' && this.chainNetwork.chain === 'BTC') ||
+      (this.queryType === 'blockHash' && this.chainNetwork.chain === 'WCN') ||
       this.chainNetwork.chain === 'BCH' ||
       this.chainNetwork.chain === 'DOGE'
     ) {

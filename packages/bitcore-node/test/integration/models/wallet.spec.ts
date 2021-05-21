@@ -11,7 +11,7 @@ import { intAfterHelper, intBeforeHelper } from '../../helpers/integration';
 let lockedWallet: Wallet;
 const walletName = 'Test Wallet';
 const password = 'iamsatoshi';
-const chain = 'BTC';
+const chain = 'WCN';
 const network = 'regtest';
 const chainConfig = config.chains[chain][network];
 const creds = chainConfig.rpc;

@@ -68,7 +68,7 @@ describe('Wallet Model', function() {
         pubKey:
           'xpub661MyMwAqRbcFa63vSTa3vmRiVWbpLWhgUsyvjfMFP7ePR5osC1rtPUkgJrB94V1YEQathfWLm9U5zaZttYPDPWhASwJGUvYvPGtofqnTGN',
         path: "m/44'/0'/0'",
-        chain: 'BTC',
+        chain: 'WCN',
         network: 'regtest'
       } as MongoBound<IWallet>;
 

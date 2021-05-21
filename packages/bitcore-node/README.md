@@ -12,7 +12,7 @@ Set up your bitcore.config.json file in ./bitcore
 {
   "bitcoreNode": {
     "chains": {
-      "BTC": {
+      "WCN": {
         "mainnet": {
           "chainSource": "p2p",
           "trustedPeers": [
@@ -46,7 +46,7 @@ Set up your bitcore.config.json file in ./bitcore
       },
       "BCH": {
         "mainnet": {
-          "parentChain": "BTC",
+          "parentChain": "WCN",
           "forkHeight": 478558,
           "trustedPeers": [
             {

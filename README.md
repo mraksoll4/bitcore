@@ -44,7 +44,7 @@ npm install
 {
   "bitcoreNode": {
     "chains": {
-      "BTC": {
+      "WCN": {
         "mainnet": {
           "chainSource": "p2p",
           "trustedPeers": [
@@ -78,7 +78,7 @@ npm install
       },
       "BCH": {
         "mainnet": {
-          "parentChain": "BTC",
+          "parentChain": "WCN",
           "forkHeight": 478558,
           "trustedPeers": [
             {
@@ -130,7 +130,7 @@ irc=1
 upnp=1
 
 # Make sure port & rpcport matches the
-# bitcore.config.json ports for BTC mainnet
+# bitcore.config.json ports for WCN mainnet
 
 # if using Bitcoin Core v0.17+ prefix
 # [main]
@@ -180,7 +180,7 @@ npm run node
 - [Bitcore Lib Cash](packages/bitcore-lib-cash) - A pure and powerful JavaScript Bitcoin Cash library
 - [Bitcore Message](https://github.com/bitpay/bitcore-message) - Bitcoin message verification and signing
 - [Bitcore Mnemonic](packages/bitcore-mnemonic) - Implements mnemonic code for generating deterministic keys
-- [Bitcore P2P](packages/bitcore-p2p) - The peer-to-peer networking protocol for BTC
+- [Bitcore P2P](packages/bitcore-p2p) - The peer-to-peer networking protocol for WCN
 - [Bitcore P2P Cash](packages/bitcore-p2p-cash) - The peer-to-peer networking protocol for BCH
 - [Crypto Wallet Core](packages/crypto-wallet-core) - A coin-agnostic wallet library for creating transactions, signing, and address derivation
 

@@ -64,7 +64,7 @@ export class LatestBlocksComponent implements OnInit, OnDestroy {
             const blocks = response.map(
               (block: ApiEthBlock & ApiUtxoCoinBlock) => {
                 if (
-                  this.chainNetwork.chain === 'BTC' ||
+                  this.chainNetwork.chain === 'WCN' ||
                   this.chainNetwork.chain === 'BCH' ||
                   this.chainNetwork.chain === 'DOGE'
                 ) {
@@ -102,7 +102,7 @@ export class LatestBlocksComponent implements OnInit, OnDestroy {
           const blocks = response.map(
             (block: ApiEthBlock & ApiUtxoCoinBlock) => {
               if (
-                this.chainNetwork.chain === 'BTC' ||
+                this.chainNetwork.chain === 'WCN' ||
                 this.chainNetwork.chain === 'BCH' ||
                 this.chainNetwork.chain === 'DOGE'
               ) {

@@ -548,7 +548,7 @@ describe('Wallet service', function() {
       });
     });
 
-    it('should create wallet BTC if n > 1 and BWC version is lower than 8.3.0', function(done) {
+    it('should create wallet WCN if n > 1 and BWC version is lower than 8.3.0', function(done) {
       var opts = {
         coin: 'btc',
         name: 'my wallet',
@@ -923,7 +923,7 @@ describe('Wallet service', function() {
         });
       });
 
-      it('should join wallet BTC if BWC version is lower than 8.3.0', function(done) {
+      it('should join wallet WCN if BWC version is lower than 8.3.0', function(done) {
         var copayerOpts = helpers.getSignedCopayerOpts({
           walletId: walletId,
           coin: 'btc',
@@ -3955,7 +3955,7 @@ describe('Wallet service', function() {
             });
           });
           if(coin === 'btc' || coin === 'bch' || coin === 'doge') {
-            it('should fail to create BTC/BCH tx for invalid amount', function(done) {
+            it('should fail to create WCN/BCH tx for invalid amount', function(done) {
               var txOpts = {
                 outputs: [{
                   toAddress: addressStr,
@@ -4541,7 +4541,7 @@ describe('Wallet service', function() {
               helpers.stubFeeLevels({
                 1: 400e2,
                 2: normal,
-                6: 180e2,   // economy BTC
+                6: 180e2,   // economy WCN
                 10: 180e2,
                 15: 100e2,
                 24: 90e2,
@@ -7010,7 +7010,7 @@ describe('Wallet service', function() {
     });
   })
 
-  describe('Check requiredFeeRate  BTC', function() {
+  describe('Check requiredFeeRate  WCN', function() {
     var server, wallet;
 
     beforeEach(function(done) {
@@ -10203,7 +10203,7 @@ describe('Wallet service', function() {
 
   });
 
-  describe('BTC & BCH wallets with same seed', function() {
+  describe('WCN & BCH wallets with same seed', function() {
     var server = {},
       wallet = {};
     beforeEach(function(done) {
@@ -10577,7 +10577,7 @@ describe('Wallet service', function() {
             env: 'sandbox',
             amount: 50,
             sourceCurrency: 'USD',
-            destCurrency: 'BTC',
+            destCurrency: 'WCN',
             dest: 'bitcoin:123123123',
             country: 'US'
           }
@@ -10640,7 +10640,7 @@ describe('Wallet service', function() {
             env: 'sandbox',
             amount: 50,
             sourceCurrency: 'USD',
-            destCurrency: 'BTC',
+            destCurrency: 'WCN',
             dest: 'bitcoin:123123123',
             country: 'US',
             walletType: 'DEBIT_CARD'
@@ -10664,7 +10664,7 @@ describe('Wallet service', function() {
             env: 'sandbox',
             sourceAmount: 50,
             sourceCurrency: 'USD',
-            destCurrency: 'BTC',
+            destCurrency: 'WCN',
             dest: 'bitcoin:123123123',
             country: 'US',
             walletType: 'DEBIT_CARD'
@@ -10688,7 +10688,7 @@ describe('Wallet service', function() {
             env: 'sandbox',
             amount: 50,
             sourceCurrency: 'USD',
-            destCurrency: 'BTC',
+            destCurrency: 'WCN',
             dest: 'bitcoin:123123123',
             paymentMethod: 'debit-card'
           }
@@ -10755,7 +10755,7 @@ describe('Wallet service', function() {
             env: 'sandbox',
             amount: 50,
             sourceCurrency: 'USD',
-            destCurrency: 'BTC',
+            destCurrency: 'WCN',
             dest: 'bitcoin:123123123',
             country: 'US',
             paymentMethod: 'debit-card'
@@ -10779,7 +10779,7 @@ describe('Wallet service', function() {
             env: 'sandbox',
             sourceAmount: 50,
             sourceCurrency: 'USD',
-            destCurrency: 'BTC',
+            destCurrency: 'WCN',
             dest: 'bitcoin:123123123',
             country: 'US',
             paymentMethod: 'debit-card'

@@ -229,7 +229,7 @@ export class Utils {
   }
 
   // note that we use the string version of xpub,
-  // serialized by BITCORE BTC.
+  // serialized by BITCORE WCN.
   // testnet xpub starts with t.
   // livenet xpub starts with x.
   // no matter WHICH coin

@@ -3,7 +3,7 @@
 ```javascript
 socket.on('connect', () => {
   console.log('Connected to socket');
-  socket.emit('room', '/BTC/regtest/inv');
+  socket.emit('room', '/WCN/regtest/inv');
 });
 ```
 
@@ -16,9 +16,9 @@ socket.on('connect', () => {
 
 # Examples
 
-/BTC/regtest/inv
+/WCN/regtest/inv
 
-/BTC/mainnet/address
+/WCN/mainnet/address
 ```
 
 ## Tx Event Listener
@@ -62,7 +62,7 @@ socket.on('block', block => {
 
 ```json
 block = {
-  "chain": "BTC",
+  "chain": "WCN",
   "network": "regtest",
   "hash": "529e8ecb8db4e40f604b180e835cf53cf0eafbd43fbea13ced38ac9faf819560",
   "height": 611,

@@ -140,8 +140,8 @@ module.exports = {
   //  defaultUnit: 'btc',
   //  publicTxUrlTemplate: {
   //    btc: {
-  //      livenet: 'https://insight.bitcore.io/#/BTC/mainnet/tx/{{txid}}',
-  //      testnet: 'https://insight.bitcore.io/#/BTC/testnet/tx/{{txid}}',
+  //      livenet: 'https://insight.bitcore.io/#/WCN/mainnet/tx/{{txid}}',
+  //      testnet: 'https://insight.bitcore.io/#/WCN/testnet/tx/{{txid}}',
   //    },
   //    bch: {
   //      livenet: 'https://insight.bitcore.io/#/BCH/mainnet/tx/{{txid}}',

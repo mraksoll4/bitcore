@@ -23,7 +23,7 @@ describe('Config', function() {
 
   it('should be able to update config', () => {
     const originalConfig = Config.get();
-    const chain = 'BTC';
+    const chain = 'WCN';
     const network = 'testnet';
     const testConfig = {
       [chain]: {

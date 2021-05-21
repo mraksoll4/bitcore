@@ -239,7 +239,7 @@ export class EmailService {
   _getDataForTemplate(notification, recipient, cb) {
     // TODO: Declare these in BWU
     const UNIT_LABELS = {
-      btc: 'BTC',
+      btc: 'WCN',
       bit: 'bits',
       bch: 'BCH',
       eth: 'ETH',

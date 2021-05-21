@@ -42,7 +42,7 @@ describe('Transaction Model', function() {
     );
 
     await TransactionStorage.streamMintOps({
-      chain: 'BTC',
+      chain: 'WCN',
       network: 'regtest',
       txs: [tx],
       height: 8534,
@@ -69,7 +69,7 @@ describe('Transaction Model', function() {
     );
 
     await TransactionStorage.streamMintOps({
-      chain: 'BTC',
+      chain: 'WCN',
       network: 'regtest',
       txs: new Array(100000).fill(tx),
       height: 8534,
@@ -99,7 +99,7 @@ describe('Transaction Model', function() {
     );
 
     await TransactionStorage.streamSpendOps({
-      chain: 'BTC',
+      chain: 'WCN',
       network: 'regtest',
       txs: [tx],
       height: CURRENT_HEIGHT,
@@ -136,7 +136,7 @@ describe('Transaction Model', function() {
       );
 
       await TransactionStorage.streamMintOps({
-        chain: 'BTC',
+        chain: 'WCN',
         network: 'regtest',
         txs: [tx],
         height: 8534,
@@ -181,7 +181,7 @@ describe('Transaction Model', function() {
       );
 
       await TransactionStorage.streamTxOps({
-        chain: 'BTC',
+        chain: 'WCN',
         network: 'regtest',
         txs: [tx],
         height: CURRENT_HEIGHT,

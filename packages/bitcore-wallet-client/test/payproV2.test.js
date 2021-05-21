@@ -302,7 +302,7 @@ describe('payproV2', () => {
       mockRequest(Buffer.from(TestData.payProJsonV2.btc.body, 'hex'), TestData.payProJsonV2.btc.headers);
       var opts = {
         paymentUrl: 'https://bitpay.com/i/LanynqCPoL2JQb8z8s5Z3X',
-        chain: 'BTC',
+        chain: 'WCN',
         currency: '',
         unsignedTransactions: [],
       };

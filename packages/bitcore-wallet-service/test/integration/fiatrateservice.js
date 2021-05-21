@@ -386,7 +386,7 @@ describe('Fiat rate service', function() {
       }];
 
       request.get.withArgs({
-        url: 'https://bitpay.com/api/rates/BTC',
+        url: 'https://bitpay.com/api/rates/WCN',
         json: true
       }).yields(null, null, btc);
       request.get.withArgs({

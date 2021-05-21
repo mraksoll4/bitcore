@@ -9,7 +9,7 @@
       }
     },
     "chains": {
-      "BTC": {
+      "WCN": {
         "regtest": {
           "chainSource": "p2p",
           "trustedPeers": [
