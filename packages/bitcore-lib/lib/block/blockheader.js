@@ -9,7 +9,7 @@ var Hash = require('../crypto/hash');
 var JSUtil = require('../util/js');
 var $ = require('../util/preconditions');
 
-var GENESIS_BITS = 0x1e0ffff0;
+var GENESIS_BITS = 0x1d00ffff;
 
 /**
  * Instantiate a BlockHeader from a Buffer, JSON object, or Object with
