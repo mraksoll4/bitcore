@@ -48,6 +48,34 @@ module.exports = {
         defaultValue: 10000
       }
     ],
+    wcn: [
+      {
+        name: 'urgent',
+        nbBlocks: 2,
+        multiplier: 1.5,
+        defaultValue: 75000
+      },
+      {
+        name: 'priority',
+        nbBlocks: 2,
+        defaultValue: 50000
+      },
+      {
+        name: 'normal',
+        nbBlocks: 3,
+        defaultValue: 30000
+      },
+      {
+        name: 'economy',
+        nbBlocks: 6,
+        defaultValue: 25000
+      },
+      {
+        name: 'superEconomy',
+        nbBlocks: 24,
+        defaultValue: 10000
+      }
+    ],
     bch: [
       {
         name: 'normal',
@@ -202,6 +230,8 @@ module.exports = {
   MAX_TX_SIZE_IN_KB_BCH: 100,
 
   MAX_TX_SIZE_IN_KB_DOGE: 100,
+  
+  MAX_TX_SIZE_IN_KB_WCN: 100,
 
   // MAX_TX_SIZE_IN_KB_ETH: 500, // not used
   // MAX_TX_SIZE_IN_KB_XRP: 1000, // not used
