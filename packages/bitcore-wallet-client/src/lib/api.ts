@@ -69,6 +69,7 @@ export class API extends EventEmitter {
   static Bitcore = CWC.BitcoreLib;
   static BitcoreCash = CWC.BitcoreLibCash;
   static BitcoreDoge = CWC.BitcoreLibDoge;
+  static BitcoreWcn = CWC.BitcoreLibWcn;
 
   constructor(opts?) {
     super();
