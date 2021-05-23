@@ -26,7 +26,7 @@ var messages = new Messages({
   network: network
 });
 var blockHash = {
-  'livenet': '000000000000000013413cf2536b491bf0988f52e90c476ffeb701c8bfdb1db9',
+  'livenet': '00000000000039532ae89b67ae2e678358c5b40c892198e329df2cbe4bfc9428',
   'testnet': '0000000058cc069d964711cd25083c0a709f4df2b34c8ff9302ce71fe5b45786'
 };
 var stopBlock = {
@@ -53,7 +53,7 @@ describe('Integration with ' + network.name + ' bitcoind', function() {
       m.services.toString().should.equal('1');
       Math.abs(new Date() - m.timestamp).should.be.below(10000); // less than 10 seconds of time difference
       m.nonce.length.should.equal(8);
-      m.startHeight.should.be.above(300000);
+      m.startHeight.should.be.above(10000);
       cb();
     });
     peer.once('verack', function(m) {
